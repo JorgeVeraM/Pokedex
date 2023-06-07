@@ -11,7 +11,7 @@ const fetchPokemon = () => {
     .then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("./css/cry-bula.gif");
+            pokeImage("./css/imagenes/cry-bula.gif");
         }
         else {
             return res.json();
