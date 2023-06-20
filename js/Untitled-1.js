@@ -1,8 +1,6 @@
 
-window.addEventListener("keydown" , (e) => {
-
-    if(e.keyCode === 13){
-        fetchPokemon();
+function background(){
+    fetchPokemon();
         let stats = document.querySelector(".stats");
         let colorPoke = document.querySelector(".background-pokemon")
         let recomendacion = document.getElementById("recomendacion")
@@ -10,11 +8,21 @@ window.addEventListener("keydown" , (e) => {
         stats.style.background = "#fff"
         colorPoke.style.background = "#9CD6FC";
         recomendacion.style.display = "none";
+}
 
+
+
+window.addEventListener("keydown" , (e) => {
+
+    if(e.keyCode === 13){
+      background();
     }
 
 
 })
+
+
+
 
 
 const fetchPokemon = () => {
