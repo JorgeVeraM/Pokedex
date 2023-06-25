@@ -1,6 +1,7 @@
 
 function background(){
     fetchPokemon();
+        
         let stats = document.querySelector(".stats");
         let colorPoke = document.querySelector(".background-pokemon")
         let recomendacion = document.getElementById("recomendacion")
@@ -8,6 +9,8 @@ function background(){
         stats.style.background = "#fff"
         colorPoke.style.background = "#9CD6FC";
         recomendacion.style.display = "none";
+        clear();
+       
 }
 
 
@@ -17,8 +20,6 @@ window.addEventListener("keydown" , (e) => {
     if(e.keyCode === 13){
       background();
     }
-
-
 })
 
 
@@ -33,8 +34,10 @@ const fetchPokemon = () => {
     fetch(url)
     .then((res) => {
         if (res.status != "200") {
+
             console.log(res);
             pokeImage("./css/imagenes/cry-bula.gif");
+
         }
         else {
             return res.json();
@@ -65,6 +68,7 @@ const pokeImage = (url) => {
 }
 
 const namePokemo = (url , url2 , url3 , url4 , url5 , url6) => {
+    
     const name = document.getElementById("name");
     const weight = document.getElementById("weight");
     const height = document.getElementById("height");
@@ -83,4 +87,9 @@ const namePokemo = (url , url2 , url3 , url4 , url5 , url6) => {
     
 
 
+}
+
+function clear(){
+    let   pokeNameInput = document.getElementById("pokeName");
+    pokeNameInput.value = "";
 }
