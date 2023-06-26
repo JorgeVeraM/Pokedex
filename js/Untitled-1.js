@@ -7,11 +7,12 @@ function background(){
         let recomendacion = document.getElementById("recomendacion")
         stats.style.display = "block";
         stats.style.background = "#fff"
-        colorPoke.style.background = "#9CD6FC";
+        colorPoke.style.background = "#eb5c5c"
         recomendacion.style.display = "none";
         clear();
        
 }
+
 
 
 
@@ -93,3 +94,6 @@ function clear(){
     let   pokeNameInput = document.getElementById("pokeName");
     pokeNameInput.value = "";
 }
+
+
+

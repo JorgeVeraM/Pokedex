@@ -1,8 +1,7 @@
 
 
 body{
-  background-image: url(./imagenes/182719.jpg);
-  background-size: cover;
+  background-color: #90B2DE;
   font-family: Arial, Helvetica, sans-serif;
  
 }
@@ -15,12 +14,17 @@ body{
 
 }
 
+.logo img{
+  width: 250px;
+}
+
 
 section{
+  
   background-color: rgba(255, 255, 255, 0.3);
-  width: 600px;
+  width: 940px;
   backdrop-filter: blur(20px);
-  border: solid 2px #3F63CB;
+  border: solid 2px #638FCB;
   border-radius: 5px;
   text-align: center;
   margin: 0px;
@@ -30,7 +34,7 @@ section{
 }
 
 .marco{
-background-color: #3F63CB;
+background-color: #638FCB;
 }
 .marco h2 {
 padding: 20px 0;
@@ -45,11 +49,15 @@ font-size: 20px;
 
 width: 400px;
 margin: 120px auto auto;
+border-radius: 15px 15px 0 0;
+
 
 
 
 
 }
+
+
 
 .centrado{
 width: 200px;
@@ -111,6 +119,7 @@ button {
 
 button:hover {
   border: 1px solid white;
+  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -127,7 +136,6 @@ font-family: 'Noto Sans', sans-serif;
 
 }
 
-
 img{
   width: 150px;
   height: 150px;
@@ -143,7 +151,9 @@ margin-top: 20px;
 .stats{
 margin: 0 auto;
 width: 400px;
+padding: 20px 0;
 display: none;
+border-radius: 0 0 15px 15px;
 
 
 
